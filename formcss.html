@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #S{
+                color: red;
+            }
+            div{
+                margin: 20px 10px;
+            }
+            #a{
+                margin: 20px 40px;
+            }
+            #b{
+                margin: 20px 29px; 
+            }
+            #c{
+                margin: 20px 0px;
+            }
+            form{
+                margin-left: 25%;
+                margin-right: 25%;
+                margin-top: 10%;
+            }
+            textarea,input,select,button{
+                border-radius: 10px;
+            }
+            button{
+                background-color: darkcyan;
+                font-weight: bold;
+            }
+            button:hover{
+                background-color: darkkhaki;
+                font-style: italic;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend><h2>Contact Form</h2></legend>
+                <h3>Let us know your questions, suggestions and concerns by filling out the contact below.</h3>
+                <div>
+                Your Name<span id="S">*</span> <input type="text" min="0" max="25" required name="name">
+                </div>
+                <div>
+                Your Email<span id="S">*</span> <input type="email" required name="email">
+                </div>
+                <div id="a">
+                    Phone <span id="S">*</span> <input type="text" min="10" max="10" required name="phone">
+                </div>
+                <div id="b">
+                    Message<span id="S">*</span>
+                    <select required>
+                        <option>Today i am busy</option>
+                        <option>Tomorrow I will Submit</option>
+                        <option>other</option>
+                    </select>
+                </div>
+                <div id="c">
+                    Other Message 
+                            <textarea name="other" cols="25" rows="4"></textarea>
+                </div>
+                <button>Submit</button>
+            </fieldset>
+        </form>
+    </body>
+</html>
